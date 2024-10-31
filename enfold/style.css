@@ -1,0 +1,95 @@
+/** /info-advice **/
+.page-id-161 .slide-entry img,
+.page-id-29786 .slide-entry img {
+    display: flex;
+    width: 100%;
+    height: 10em;
+    object-fit: cover;
+}
+
+@media (min-width: 600px) {
+    .page-id-161 .slide-entry-wrap {
+        display: flex;
+    }
+
+    .page-id-161 article.slide-entry {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-id-161 .slide-content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-id-161 .slide-entry-excerpt.entry-content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-id-161 .slide-entry img,
+    .page-id-29786 .slide-entry img {
+        height: 7em;
+    }
+}
+
+/* temporary */
+.page-id-161 .slide-image .fallback-post-type-icon,
+.page-id-29786 .slide-image .fallback-post-type-icon {
+    display: none;
+}
+/* end_temporary */
+
+/* author card */
+body:not(.page-id-161):not(.page-id-29786) .author-post-link-archive {
+    display: none;
+}
+
+.page-id-161 .author-post-link-archive,
+.page-id-29786 .author-post-link-archive {
+    display: flex;
+    margin-top: 1em;
+    flex-wrap: nowrap;
+}
+
+.page-id-161 .author-post-link-archive img,
+.page-id-29786 .author-post-link-archive img {
+    width: 50px;
+    height: 50px;
+}
+
+.page-id-161 .post-author-link-read-more,
+.page-id-29786 .post-author-link-read-more {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.page-id-161 .post-author-link,
+.page-id-29786 .post-author-link {
+    font-size: 0.75em;
+    line-height: 1;
+}
+
+.page-id-161 .post-author-link .post-author-name,
+.page-id-29786 .post-author-link .post-author-name {
+    font-weight: 700;
+}
+
+.page-id-161 .post-read-more,
+.page-id-29786 .post-read-more {
+    font-size: 0.75em;
+    line-height: 1;
+}
+
+@media (max-width: 430px) {
+    .page-id-161 .author-post-link-archive,
+    .page-id-29786 .author-post-link-archive {
+        justify-content: center;
+    }
+}
